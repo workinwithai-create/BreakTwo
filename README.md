@@ -6,13 +6,13 @@ Suno and loop DAWs restart the chorus on the same kick. The song never finishes 
 
 Live samples only: FluidR3 acoustic grand, upright bass, nylon guitar, trumpet, violin, and an acoustic kit (kick, snare, hi-hat, crash, high tom, mid tom, floor tom). CDN URLs are pinned to PreEight commit `d58301e4a494555f411a2afbc448b724136eee76`. No branch-tip sample URLs. No oscillators.
 
-This desk is free.
+Playback is free. This build is not shipped.
 
 ## Distinct from the line
 
 | Tool | Job |
 | --- | --- |
-| LandFour | Cadence so a loop can sit down (yesterday) |
+| LandFour | Cadence so a loop can sit down |
 | TagFour | Four-bar last-line tag after the money chorus |
 | LiftTwo | Two bars of production lift |
 | PreEight | Eight-bar musical climb into the hook |
@@ -24,11 +24,11 @@ This desk is free.
 | ShakeFour | Shaker lift, not a break |
 | **BreakTwo** | Two bars that earn the chorus return |
 
-## Pricing recommendation
+## Pricing
 
-One-time **$19** on Lemon Squeezy. Mirror on Gumroad. Do not subscribe. Forge Pass stays the meter for cloud tools (AuraMix, MixForge, ReleaseForge). A finite desk is a tool, not a seat.
+One-time **$19**. Do not subscribe. Forge Pass stays the meter for AuraMix, MixForge, and ReleaseForge.
 
-The shipped app is free. No license gate.
+Checkout that exists today is the family Stripe page at https://workinwithai.com/#pricing. That checkout does not deliver a BreakTwo license key. Lemon Squeezy validate is the intended key check (`POST /v1/licenses/validate`). Until a desk product exists and a key unlocks WAV/MIDI, do not call this shipped.
 
 ## Loop
 
@@ -38,8 +38,6 @@ The shipped app is free. No license gate.
 4. Hear B: six bars of chorus, two of break, then stop. The hook would start on bar 9.
 5. Export WAV (48 kHz, 24-bit, folded tail, peak at or below −1 dBFS) and matching MIDI, one track per chair.
 
-Space is not bound. Dock buttons play.
-
 ## Engine
 
-Lookahead scheduler on the AudioContext clock (`LOOKAHEAD_MS = 25`, `SCHEDULE_AHEAD = 0.12`). Live recipe, mutes, tempo, and key apply on the next step. Stop kills active sources. Hidden tab stops cleanly.
+Lookahead scheduler on the AudioContext clock (`LOOKAHEAD_MS = 25`, `SCHEDULE_AHEAD = 0.12`). Live recipe, mutes, tempo, and key apply on the next step. Stop kills active sources. Hidden tab stops cleanly. iOS silent switch mutes Web Audio.
