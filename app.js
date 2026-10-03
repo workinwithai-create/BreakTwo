@@ -236,7 +236,7 @@ function recipeHits(recipe, bar, six, mode) {
     if (six === 0) add("piano", 0, { role: "shell", dur: 5 });
     if (six === 0) add("violin", 0, { role: "fifth", dur: 7, gain: 0.16 });
   } else if (recipe === "violin-hold") {
-    if (six === 0 && local === 0) add("violin", 0, { role: "fifth", dur: 7.8, gain: 0.34, swell: true });
+    if (six === 0 && local === 0) add("violin", 0, { role: "fifth", dur: 8.4, gain: 0.34, swell: true });
     if (six === 0) add("piano", 0, { role: "shell", dur: 7.4, gain: 0.28 });
     if (local === 0 && six === 0) add("bass", 0, { role: "root", dur: 3.5 });
     if (local === 1 && six === 12) add("kick", 0, { gain: 0.35 });
