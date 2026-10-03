@@ -1,0 +1,7 @@
+{
+  "name": "breaktwo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Two-bar live drum-break desk. FluidR3 chairs so a chorus can return.",
+  "scripts": { "start": "npx --yes serve -p 4173 ." }
+}

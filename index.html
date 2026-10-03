@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BreakTwo — two-bar drum break desk</title>
+  <meta name="description" content="Two live-instrument bars so the chorus can return instead of restarting cold." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs · free desk</p>
+  <h1>BreakTwo</h1>
+  <p class="lead">The chorus restarts on the same kick, so the song never finishes. Session players write two bars — tom run, snare press, stop, pickup — then the hook is allowed back. Not a lift, not a tag, not a half-time chorus.</p>
+  <p class="status" id="status">Tap to start audio</p>
+  <p class="ios">iOS silent switch mutes Web Audio.</p>
+
+  <p class="eyebrow">Your song</p>
+  <div class="song">
+    <label>BPM <input id="bpm" type="number" min="60" max="180" value="96" /></label>
+    <label>Key
+      <select id="key"></select>
+    </label>
+    <label class="grow">Four chords <input id="chords" type="text" value="Am F C G" spellcheck="false" /></label>
+  </div>
+
+  <p class="eyebrow">Break</p>
+  <div class="row" id="recipes"></div>
+
+  <p class="eyebrow">Chairs</p>
+  <div class="row" id="mutes"></div>
+
+  <p class="eyebrow">Form · chorus 1–6 · break 7–8 · return would be bar 9</p>
+  <div class="bars" id="bars"></div>
+  <div class="playhead-wrap"><div class="playhead" id="playhead"></div></div>
+
+  <h2>Punch list</h2>
+  <pre id="punch"></pre>
+</main>
+<div class="dock">
+  <button id="playA">A · Loop</button>
+  <button id="playB">B · Break</button>
+  <button id="play2">2 · Break only</button>
+  <button class="ghost" id="stop">Stop</button>
+  <button class="ghost" id="wav">WAV</button>
+  <button class="ghost" id="wavTail">WAV + tail</button>
+  <button class="ghost" id="mid">MIDI</button>
+  <button class="ghost" id="copy">Copy punch</button>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
