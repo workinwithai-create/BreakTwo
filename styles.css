@@ -64,7 +64,12 @@ pre {
   background: rgba(18,16,14,0.94);
   border-top: 1px solid var(--line);
 }
+.onboard, .license { border: 1px solid #3a322c; padding: 12px; margin: 12px 0; border-radius: 8px; }
+.onboard button, .license button, .buy { min-height: 44px; }
+.buy { display: inline-block; margin: 8px 8px 8px 0; text-decoration: none; }
 @media (max-width: 700px) {
   h1 { font-size: 32px; }
   .bars { grid-template-columns: repeat(4, 1fr); }
+  .dock button { min-height: 48px; font-size: 15px; }
+  input, select { font-size: 16px; }
 }
